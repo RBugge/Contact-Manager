@@ -12,7 +12,7 @@
 	$email = $inData["email"];
 	$phonenumber = $inData["phonenumber"];
 
-	$conn = new mysqli("localhost", "TheBeast", "WeLoveCOP4331", "COP4331");
+	$conn = new mysqli("localhost", "APIbot", "beepboop", "ContactManager");
 	if ($conn->connect_error) 
 	{
 		returnWithError( $conn->connect_error );
