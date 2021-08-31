@@ -16,28 +16,34 @@
     <div class="container-fluid g-0">
         <nav class="navbar navbar-shadow navbar-expand navbar-light bg-light fixed-top">
             <div class="container container-fluid">
-                <a class="navbar-brand" href="#"><i class="bi-person-lines-fill mx-2"></i>Navbar</a>
+                <a class="navbar-brand" href="#">
+                    <i class="bi-person-lines-fill ms-2"></i>
+                    <p class="d-inline d-none d-sm-inline">Navbar</p>
+                </a>
 
                 <!-- Search bar -->
                 <form class="d-flex">
-                    <div class="w-50 mx-2">
+
+                    <div class="input-group me-1">
+                        <input class="form-control w-50" type="search" placeholder="Search" aria-label="Search">
                         <select class="form-select" id="search-option">
                             <option value="1" selected="selected">All</option>
                             <option value="2">First</option>
                             <option value="3">Last</option>
-                            <option value="4">Tags</option>
+                            <option value="4">Tag</option>
                         </select>
+                        <button class="btn btn-outline-success" type="submit"><i class="bi-search"></i></button>
                     </div>
 
-                    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search" />
-
-                    <button class="btn btn-outline-success" type="submit">Search</button>
                 </form>
 
-                <button class="btn btn-success mx-1 d-inline-flex" type="submit" onclick="addContact()"><i class="bi bi-plus p-0"></i>Add</button>
+                <button class="btn btn-success d-sm-inline" type="submit" onclick="addContact()" id="add-btn">
+                    <i class="bi bi-plus"></i>
+                    <p class="d-inline d-none d-md-inline">Add</p>
+                </button>
 
                 <!-- Hamburger Menu -->
-                <div class="" id="navbarSupportedContent">
+                <div id="navbarSupportedContent">
                     <ul class="navbar-nav">
                         <li class="nav-item dropdown">
                             <a class="nav-link" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown"

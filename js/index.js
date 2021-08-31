@@ -22,4 +22,10 @@ let contact = `<div class="card border-0 h-100 g-0 mt-2 ms-2" style="max-width: 
 
 function addContact() {
     $("#contact-list").prepend(contact);
+    scrollTop();
 }
+
+function scrollTop() {
+    $("html, body").animate({ scrollTop: 0 }, "slow");
+    return false;
+};
