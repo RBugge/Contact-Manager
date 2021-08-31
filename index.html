@@ -7,15 +7,16 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous" />
     <link href="css/style.css" rel="stylesheet" type="text/css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
     <title>Contact Manager</title>
 </head>
 
-<body class="bg-dark">
+<body class="bg-light pb-4">
     <!-- Navbar -->
     <div class="container-fluid g-0">
-        <nav class="navbar navbar-expand navbar-light bg-light sticky-top">
+        <nav class="navbar navbar-shadow navbar-expand navbar-light bg-light fixed-top">
             <div class="container container-fluid">
-                <a class="navbar-brand" href="#">Navbar</a>
+                <a class="navbar-brand" href="#"><i class="bi-person-lines-fill mx-2"></i>Navbar</a>
 
                 <!-- Search bar -->
                 <form class="d-flex">
@@ -28,13 +29,15 @@
                         </select>
                     </div>
 
-                    <input class="form-control w me-2" type="search" placeholder="Search" aria-label="Search" />
+                    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search" />
 
                     <button class="btn btn-outline-success" type="submit">Search</button>
                 </form>
 
+                <button class="btn btn-success mx-1 d-inline-flex" type="submit" onclick="addContact()"><i class="bi bi-plus p-0"></i>Add</button>
+
                 <!-- Hamburger Menu -->
-                <div class="navbar" id="navbarSupportedContent">
+                <div class="" id="navbarSupportedContent">
                     <ul class="navbar-nav">
                         <li class="nav-item dropdown">
                             <a class="nav-link" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown"
@@ -62,15 +65,15 @@
 
     <!-- Card deck -->
     <div class="container-fluid">
-        <div class="row justify-content-center">
+        <div class="row justify-content-center me-0" id="contact-list">
 
             <!-- Card -->
             <div class="card border-0 h-100 g-0 mt-2 ms-2" style="max-width: 408px;">
                 <div class="row g-0">
 
                     <div class="col-4">
-                        <img src="https://t4.ftcdn.net/jpg/00/64/67/63/360_F_64676383_LdbmhiNM6Ypzb3FM4PPuFP9rHe7ri8Ju.jpg"
-                            class="img-fluid rounded-start" alt="...">
+                        <img src="images/SeekPng.com_avatar-png_1150053.png" class="img-fluid rounded-start" alt="..."
+                            style="min-height: 136px; max-height: 136px; max-width: 136px; ">
                     </div>
 
                     <div class="col-8">
